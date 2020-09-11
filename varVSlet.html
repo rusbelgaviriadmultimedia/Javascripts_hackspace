@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <script>
+        var hola = "Hola Mundo"; //Global objeto window | se quedan en el escope global del documento
+        let hello = "Hello World";
+        console.log(hola);
+        console.log(hello);
+        console.log(window);
+        //Ambito de bloque
+console.log("**************var****************************")
+        var musica = "Rock";
+        console.log("Variable música antes del bloque ", musica);//Imprime Rock
+        {
+            var musica = "Pop"
+            console.log("Variable música dentro del bloque ", musica);//Imprime pop | Elevación de variables
+        }
+        console.log("Variable música después del bloque ", musica);//Imprime Pop | No respeta los scope de bloque
+console.log("**************let****************************")
+        let musica2 = "Clasic";
+        console.log("Variable música antes del bloque ", musica2);//Imprime Rock
+        {
+            let musica2 = "Blues"
+            console.log("Variable música dentro del bloque ", musica2);//Imprime pop | Elevación de variables
+        }
+        console.log("Variable música después del bloque ", musica2);//Imprime Pop
+    </script>
+    
+    
+</body>
+</html> 
