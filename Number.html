@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+   
+    <script>
+        let a = 2;
+        let b = new Number(1); //PrimitiveValue | valor directo
+        let c = 7.19;
+        let d = "5.6";
+
+        console.log(a,b);
+        console.log(c.toFixed(1));//un decimal
+        console.log(c.toFixed(5));//Cinco decimales
+        console.log(parseInt(c));//redondea al entero
+        console.log(parseFloat(c));
+        console.log(typeof c, typeof d);
+        console.log(a+b);
+        console.log(c+d);
+        console.log(c+parseInt(d));//No suma los decimales. | parte debil de javascripts | Optimizar con librerias.
+        console.log(c+parseFloat(d));//realiza la suma de los decimales
+        console.log(c+Number.parseInt(d));
+        console.log(c+Number.parseFloat(d));
+
+    </script>
+
+    
+    
+</body>
+</html>
